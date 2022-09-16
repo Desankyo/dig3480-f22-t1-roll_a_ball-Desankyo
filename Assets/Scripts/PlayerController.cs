@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     {
         countText.text = "Count: " + count.ToString();
         if (count >= 20)
-        
+
         {
             winTextObject.SetActive(true);
         }
@@ -85,9 +85,9 @@ public class PlayerController : MonoBehaviour
         }
         if (lives <= 0)
         {
-           Destroy(gameObject);
+            Destroy(gameObject);
         }
-        if (count >=20)
+        if (count >= 20)
         {
             GetComponent<PlayerController>().enabled = false;
         }
