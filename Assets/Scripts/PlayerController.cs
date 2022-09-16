@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         if (lives == 0)
         {
             LoseTextObject.SetActive(true);
-            GetComponent<PlayerController>().enabled = false;
+            
         }
     }
 
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         // Player death
         if (lives == 0)
         {
-            LoseTextObject.SetActive(true);
+            Destroy(gameObject);
             GetComponent<PlayerController>().enabled = false;
         }
         // Player teleport
