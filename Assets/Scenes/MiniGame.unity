@@ -1419,6 +1419,8 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 807316846}
   winTextObject: {fileID: 631406609}
+  livesText: {fileID: 0}
+  LoseTextObject: {fileID: 631406609}
 --- !u!1001 &768432819
 PrefabInstance:
   m_ObjectHideFlags: 0
