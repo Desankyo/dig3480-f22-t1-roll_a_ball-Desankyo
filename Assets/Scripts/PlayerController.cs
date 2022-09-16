@@ -85,10 +85,10 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
         // Player death
-        if (gameObject.ConpareTag("Enemy"))
+        if (gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-            lives == 0;
+            lives = 0;
             SetCountText();
         }
         // Player teleport
