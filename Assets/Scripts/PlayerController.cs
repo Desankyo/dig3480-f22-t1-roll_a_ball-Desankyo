@@ -83,9 +83,8 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-        if (other.gameObject.CompareTag("Enemy"))
+        if (lives < 0)
         {
-           lives < 0;
            Destroy(gameObject);
         }
         // Player teleport
