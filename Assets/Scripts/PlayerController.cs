@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         
         {
             winTextObject.SetActive(true);
-            GetComponent<PlayerController>().enabled = false;
+            gameObject.SetActive(false);
         }
 
         livesText.text = "Lives: " + lives.ToString();
