@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         LoseTextObject.SetActive(false);
+
+        SetBool("isDead", false);
     }
 
     void OnMove(InputValue movementValue)
