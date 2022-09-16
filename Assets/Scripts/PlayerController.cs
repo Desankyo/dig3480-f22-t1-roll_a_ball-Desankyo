@@ -58,14 +58,14 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-        else if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
             count = count - 1;
 
             SetCountText();
         }
-        if (count == 12)
+        else if (count == 12)
         {
             transform.position = new Vector3(308.0f, 0.5f, 8.0f);
         }
