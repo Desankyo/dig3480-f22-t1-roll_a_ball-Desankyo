@@ -83,9 +83,10 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-        if (lives == 0);
+        if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+           (lives <= 0); 
+           Destroy(gameObject);
         }
         // Player teleport
         else if (count == 12)
