@@ -40,10 +40,10 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        livesText.text = "Lives: " lives.ToString();
+        livesText.text = "Lives: " + lives.ToString();
         if (lives = 3)
         {
-            
+            loseTextObject.SetActive(true);
         }
     }
 
