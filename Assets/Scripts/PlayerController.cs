@@ -49,7 +49,6 @@ public class PlayerController : MonoBehaviour
         
         {
             winTextObject.SetActive(true);
-            gameObject.SetActive(false);
         }
 
         livesText.text = "Lives: " + lives.ToString();
@@ -85,6 +84,10 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+        if (gameObjectIsDead);
+            {
+                gameObject.SetActive(false);
+            }
         // Player teleport
         else if (count == 12)
         {
