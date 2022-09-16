@@ -40,7 +40,11 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        livesText.text = "Lives: " 
+        livesText.text = "Lives: " count.ToString();
+        if (lives < 1)
+        {
+
+        }
     }
 
     void FixedUpdate()
