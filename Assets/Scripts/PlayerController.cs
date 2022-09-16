@@ -32,8 +32,6 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         LoseTextObject.SetActive(false);
-
-        SetBool("isDead", false);
     }
 
     void OnMove(InputValue movementValue)
@@ -56,6 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             LoseTextObject.SetActive(true);
             Destroy(gameObject);
+            GetComponent<PlayerController>().enabled = false;
         }
     }
 
@@ -64,11 +63,6 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
-
-        if (lives <= 0)
-        {
-            GetComponent<PlayerController>().enabled = false;
-        }
     }
 
     private void OnTriggerEnter(Collider other)
