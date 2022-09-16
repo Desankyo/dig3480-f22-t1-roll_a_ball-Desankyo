@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         if (lives <= 0)
         {
             LoseTextObject.SetActive(true);
-            Destroy(gameObject);
+            
         }
     }
 
@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             lives = lives - 1;
+            Destroy(gameObject);
 
             SetCountText();
         }
