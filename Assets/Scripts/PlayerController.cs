@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
         if (count >= 20)
         {
             winTextObject.SetActive(true);
+            GetComponent<PlayerController>().enabled = false;
         }
 
         livesText.text = "Lives: " + lives.ToString();
