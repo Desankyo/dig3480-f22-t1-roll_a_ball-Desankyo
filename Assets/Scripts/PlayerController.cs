@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
 
-        SetLivesText();
+        SetCountText();
         LoseTextObject.SetActive(false);
     }
 
