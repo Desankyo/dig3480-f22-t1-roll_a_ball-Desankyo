@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         livesText.text = "Lives: " count.ToString();
         if (lives < 1)
         {
-
+            
         }
     }
 
