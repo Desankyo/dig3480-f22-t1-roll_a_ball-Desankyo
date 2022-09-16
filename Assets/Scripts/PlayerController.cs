@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         lives = 3;
-        
+
         SetCountText();
         LoseTextObject.SetActive(false);
     }
