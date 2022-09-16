@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
         if (lives <= 0)
         {
             LoseTextObject.SetActive(true);
-            Destroy(gameObject);
             GetComponent<PlayerController>().enabled = false;
         }
     }
@@ -85,6 +84,8 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+        // Player death
+        if (gameObject.ConpareTag)
         // Player teleport
         else if (count == 12)
         {
