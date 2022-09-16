@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Pickups
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+        // Enemy pickups
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
@@ -65,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+        // Player teleport
         else if (count == 12)
         {
             transform.position = new Vector3(308.0f, 0.5f, 8.0f);
