@@ -83,10 +83,11 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-        if (lives < 0)
+        if (lives <= 0)
         {
            Destroy(gameObject);
         }
+        if ()
         // Player teleport
         else if (count == 12)
         {
