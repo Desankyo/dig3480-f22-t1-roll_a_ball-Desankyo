@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce(movement * speed);
 
-        if (lives == 0)
+        if (lives <= 0)
         {
             GetComponent<PlayerController>().enabled = false;
         }
