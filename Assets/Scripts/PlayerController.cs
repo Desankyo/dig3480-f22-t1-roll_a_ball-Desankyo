@@ -87,7 +87,10 @@ public class PlayerController : MonoBehaviour
         {
            Destroy(gameObject);
         }
-        if ()
+        if (count >=20)
+        {
+            GetComponent<PlayerController>().enabled = false;
+        }
         // Player teleport
         else if (count == 12)
         {
