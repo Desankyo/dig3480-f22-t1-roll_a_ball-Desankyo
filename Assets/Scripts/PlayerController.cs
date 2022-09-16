@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         }
 
         livesText.text = "Lives: " + lives.ToString();
-        if (lives == 0)
+        if (lives <= 0)
         {
             LoseTextObject.SetActive(true);
             
@@ -83,12 +83,6 @@ public class PlayerController : MonoBehaviour
             lives = lives - 1;
 
             SetCountText();
-        }
-        // Player death
-        if (lives == 0)
-        {
-            Destroy(gameObject);
-            GetComponent<PlayerController>().enabled = false;
         }
         // Player teleport
         else if (count == 12)
